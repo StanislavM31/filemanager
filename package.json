@@ -1,0 +1,20 @@
+{
+  "name": "filemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StanislavM31/filemanager.git"
+  },
+  "author": "minko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StanislavM31/filemanager/issues"
+  },
+  "homepage": "https://github.com/StanislavM31/filemanager#readme"
+}
