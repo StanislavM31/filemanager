@@ -1,11 +1,15 @@
-import os from 'os';
 import readline from 'readline';
-import handleInputModule from './input/handleInput.js';
+import os from 'os';
+import handleInputModule from '../input/handleInput.js';
 const { handleInput } = handleInputModule;
-import utils from './utils/utils.js';
+import utils from '../utils/utils.js';
 process.chdir(os.homedir());
 
-const username = process.argv.find(arg => arg.startsWith('--username='))?.split('=')[1];
+
+let username = process.argv.find(arg => arg.startsWith('--username='))?.split('=')[1];
+if(username===undefined){
+  username = '%anonimus%';
+} 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -24,3 +28,4 @@ rl.on('close', () => {
 });
 
 rl.prompt();
+
